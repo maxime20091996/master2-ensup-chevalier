@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GestionAnnoncesServlet</servlet-name>
+  	<display-name>GestionAnnoncesServlet</display-name>
+  	<description></description>
+  	<servlet-class>GestionAnnoncesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GestionPersonneServlet</servlet-name>
+  	<display-name>GestionPersonneServlet</display-name>
+  	<description></description>
+  	<servlet-class>GestionPersonneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GestionAnnoncesServlet</servlet-name>
+  	<url-pattern>/GestionAnnoncesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GestionPersonneServlet</servlet-name>
+  	<url-pattern>/GestionPersonneServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
